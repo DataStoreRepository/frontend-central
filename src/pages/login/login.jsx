@@ -24,7 +24,7 @@ export function Login () {
         }
     
         try {
-            const response = await axios.post('http://localhost:8080/usuario/login', valores);
+            const response = await axios.post('https://backend-central.onrender.com/CentralDasImagens/usuario/login', valores);
             if (response.status === 200) {
                 login(response.data);
                 toast.success('Bem-vindo!');

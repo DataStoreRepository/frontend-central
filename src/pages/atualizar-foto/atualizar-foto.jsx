@@ -32,7 +32,7 @@ export function AtualizarFoto() {
 
     const getData = async () =>  {
         try {
-            const response = await axios.get(`http://localhost:8080/foto/${id}`);
+            const response = await axios.get(`https://backend-central.onrender.com/CentralDasImagens/foto/${id}`);
             console.log(response.data)
             setValores({
                 ...valores,
@@ -50,7 +50,7 @@ export function AtualizarFoto() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.put(`http://localhost:8080/foto/${id}`, valores);
+            const response = await axios.put(`https://backend-central.onrender.com/CentralDasImagens/foto/${id}`, valores);
             response.status = 200
             toast.success('Atualizado com sucesso!')
             setTimeout(() => {
@@ -63,7 +63,7 @@ export function AtualizarFoto() {
 
     // const handleSubmitFunction = async () => {
     //     try {
-    //         const API_URL = `http://localhost:8080/foto/${id}`
+    //         const API_URL = `https://backend-central.onrender.com/CentralDasImagens/foto/${id}`
     //         await handleSubmit(e, API_URL, valores);
     //         toast.success('Atualizado com sucesso!');
     //         setTimeout(() => {

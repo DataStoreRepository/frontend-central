@@ -10,7 +10,7 @@ export function CardUser(props) {
 
     
     const navigate = useNavigate()
-    const API_URL = "http://localhost:8080/usuario"
+    const API_URL = "https://backend-central.onrender.com/CentralDasImagens/usuario"
 
     const confirmDelete = async () => {
         try {

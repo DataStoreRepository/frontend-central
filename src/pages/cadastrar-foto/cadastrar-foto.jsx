@@ -26,7 +26,7 @@ function CadastrarFoto() {
         usuario
     })
 
-    const API_URL = "http://localhost:8080/foto"
+    const API_URL = "https://backend-central.onrender.com/CentralDasImagens/foto"
 
     const handleSubmit = async (e) => {
         e.preventDefault()

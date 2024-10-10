@@ -9,7 +9,7 @@ import { CardUser } from '../../components/card-user/card-user'
 export function Usuarios() {
 
     const [usuario, setUsuario] = useState([])
-    const API_URL = "http://localhost:8080"
+    const API_URL = "https://backend-central.onrender.com/CentralDasImagens"
 
     useEffect(() => {
         getUsuarioData(API_URL, setUsuario)

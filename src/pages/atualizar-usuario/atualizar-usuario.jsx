@@ -21,7 +21,7 @@ export function AtualizarUsuario() {
     const getData = async () =>  {
 
         try {
-            const response = await axios.get(`http://localhost:8080/usuario/${id}`);
+            const response = await axios.get(`https://backend-central.onrender.com/CentralDasImagens/usuario/${id}`);
             console.log(response.data)
             setValores({
                 ...valores,
@@ -40,7 +40,7 @@ export function AtualizarUsuario() {
         e.preventDefault()
         try {
             
-            const response = await axios.put(`http://localhost:8080/usuario/${id}`, valores);
+            const response = await axios.put(`https://backend-central.onrender.com/CentralDasImagens/usuario/${id}`, valores);
             response.status = 200
             toast.success('Atualizado com sucesso!')
             setTimeout(() => {

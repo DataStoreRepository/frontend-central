@@ -16,7 +16,7 @@ function SearchResults() {
     useEffect(() => {
         const fetchPhotos = async () => {
             try {
-                const response = await axios.get(`http://localhost:8080/foto/search?query=${searchTerm}`);
+                const response = await axios.get(`https://backend-central.onrender.com/CentralDasImagens/foto/search?query=${searchTerm}`);
                 setPhotos(response.data); // Certifique-se de que response.data é um array de fotos
                 console.log(response.data)
             } catch (error) {

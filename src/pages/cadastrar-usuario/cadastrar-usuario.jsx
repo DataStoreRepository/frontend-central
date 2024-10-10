@@ -17,7 +17,7 @@ export function CadastrarUsuario() {
 
     const [errors, setErrors] = useState({});
 
-    const API_URL = "http://localhost:8080/usuario";
+    const API_URL = "https://backend-central.onrender.com/CentralDasImagens/usuario";
 
     const validate = () => {
         let tempErrors = {};

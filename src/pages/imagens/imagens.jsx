@@ -8,7 +8,7 @@ import { getFotoData } from '../../api/imagens'
 function Imagens() {
 
   const [fotos, setFotos] = useState([])
-  const API_URL = "http://localhost:8080"
+  const API_URL = "https://backend-central.onrender.com/CentralDasImagens"
 
   useEffect(() => {
     getFotoData(API_URL, setFotos)
